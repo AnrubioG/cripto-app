@@ -1,0 +1,128 @@
+:root {
+  --primary: #1e6044;
+  --secundary: #0b261a;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("/public/rodion-kutsaiev-sR64mRdnJ9Y-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  color: #1e6044;
+  line-height: 1;
+  font-weight: 900;
+  padding-left: 2rem;
+}
+
+.app-title span {
+  display: block;
+  color: #0b261a;
+  font-size: 4rem;
+}
+
+.content {
+  margin-top: 5rem;
+  padding: 6rem 2rem;
+  background-color: #0b261ac0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(155, 126, 126, 0.22) 0px 15px 12px;
+  border-radius: 25px;
+}
+
+/* form */
+.form,
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form label {
+  font-size: 2rem;
+  color: white;
+}
+
+.form select {
+  background-color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+.form [type="submit"] {
+  background-color: #e0e1e3;
+  color: #0b261a;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  transition: background-color 300ms ease;
+}
+.form [type="submit"]:hover {
+  background-color: #0b261a;
+  color: #e0e1e3;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  background: #e0e1e3;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.result-wrapper {
+  margin-top: 5rem;
+}
+
+.result-wrapper h2 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 5rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.result img {
+  width: 100%;
+}
+
+.result p {
+  margin: 0 0 1rem;
+}
+
+.result span {
+  font-weight: 700;
+}
